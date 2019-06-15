@@ -4,7 +4,6 @@ from PIL import Image
 from keras import models
 import tensorflow as tf 
 from keras.models import load_model
-#from keras.models import load_weights
 from keras.models import model_from_json
 
 #model = tf.keras.models.load_model("MachLearn3Out1.model")

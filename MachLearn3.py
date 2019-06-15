@@ -81,6 +81,5 @@ Ress_model.fit_generator(
     validation_steps=ValidationData // batch_size, 
     callbacks=[callbacks]
 )
-
 Ress_model.save_weights('MachLearn3out1.h5')
 Ress_model.save('MachLearn3Out1.model')

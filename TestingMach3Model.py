@@ -2,7 +2,7 @@ import os
 import cv2
 import tensorflow as tf 
 
-gender = ['Truck','Mobil']
+whichModel = ['Truck','Mobil']
 directory = 'TestingMach3/'    
 isi = os.listdir(directory)
 
@@ -39,5 +39,5 @@ for i in isi:
     
     data = str(directory+i)
     prediction = model.predict([testingIMG(data)])
-    print(data,gender[int(prediction[0][1])]) 
+    print(data,whichModel[int(prediction[0][1])]) 
         #' = ',gender[int(prediction[0][0])])

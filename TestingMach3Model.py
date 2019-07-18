@@ -32,6 +32,9 @@ def testingIMG(filepath):
 
 model = tf.keras.models.load_model("MachLearn3Out1.model")
 
+model.summary()
+# 22 22 64
+print(22*22*64)
 #prediction = model.predict([testingIMG(test_data_dir)])
 #print(prediction)
 
@@ -39,5 +42,6 @@ for i in isi:
     
     data = str(directory+i)
     prediction = model.predict([testingIMG(data)])
+    
     print(data,whichModel[int(prediction[0][1])]) 
         #' = ',gender[int(prediction[0][0])])
